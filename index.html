@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Value</title>
+</head>
+<body>
+    
+   <div class="in"><input type="text" placeholder="WebCoders"><button>=></button></div>
+    <style>
+         .in{
+            width: 50%;
+            height: 3rem;
+            background-color: rgb(20, 20, 20);
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        input{
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            font-size: 1.2rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            caret-color: rgb(255, 255, 255);
+        }
+        button{
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            font-size: 1.4rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            caret-color: rgba(4, 77, 4, 0.911);
+            border-radius: 1rem;
+        }
+        button:hover{
+            color: rgb(230, 230, 230);
+            background-color: rgb(46, 46, 46);
+            
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: silver;
+        }
+    </style>
+
+    <script>
+       const inputw =  document.querySelector('input');
+       const btn = document.querySelector('button');
+
+       btn.addEventListener('click', function(){
+        document.querySelector('body').style.background = inputw.value;
+       })
+       
+
+    </script>
+</body>
+</html>
